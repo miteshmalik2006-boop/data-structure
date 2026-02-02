@@ -1,1 +1,6 @@
-l1={3,4,5,3,4,6}
+def containsDuplicate(nums):
+    return len(nums) != len(set(nums))
+
+nums = [1, 2, 3, 1]
+print(containsDuplicate(nums))
+
