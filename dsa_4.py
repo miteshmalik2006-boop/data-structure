@@ -1,7 +1,7 @@
 l1 = [3,4,5,6]
 l2 = [3,2,3,2,3]
 print(12)
-#find the second largest element in a list.
+# find the second largest element in a list.
 
 l1 = [3,12,9,16,7,8]
 
