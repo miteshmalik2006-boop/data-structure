@@ -16,10 +16,24 @@ class solution:
         return not stack
 
 
-# Test cases __name__ == "__main__":
+# Test cases
+if __name__ == "__main__":
     sol = solution()
     
- test
+    test_cases = [
+        ("()", True),
+        ("()[]{}", True),
+        ("(]", False),
+        ("([)]", False),
+        ("{[]}", True),
+        ("", True),
+        ("(", False),
+        (")", False),
+        ("((", False),
+        ("))", False),
+        ("({[]})", True),
+    ]
+    
     for test_string, expected in test_cases:
         result = sol.isvalid(test_string)
         status = "✓" if result == expected else "✗"
